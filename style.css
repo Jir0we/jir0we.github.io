@@ -1,0 +1,166 @@
+.mainSect {
+    background-color:rgb(79, 0, 82);
+
+}
+.jirh1index {
+    color:rgb(160, 162, 255);
+    text-align: center;
+}
+.jirindexintro {
+    color: rgb(146, 198, 228);
+    text-align: center;
+}
+.jirDes {
+    color: rgb(146, 198, 228);
+    text-align: center;
+}
+
+
+/* About Us Page */
+.aboutUsHead {
+    color:rgb(160, 162, 255);
+    text-align: center;
+}
+.aboutUsP {
+    color: rgb(146, 198, 228);
+    text-align: center;
+}
+
+/* Changelog Page */
+.changeHead {
+    text-align: center;
+    color:rgb(160, 162, 255);
+}
+
+.changeP {
+    text-align: center;
+    color: rgb(146, 198, 228);
+}
+
+.changeUpdate {
+    text-align: center;
+    color: rgb(146, 198, 228);
+}
+
+/* Navigation Link Styles 
+a:link#navlink {
+    color: rgb(161, 199, 255);
+}
+a:visited#navlink {
+    color: pink;
+}
+a:hover#navlink {
+    color: rgb(199, 130, 255);
+}
+a:active#navlink {
+
+} */
+
+/*NavBar CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.navBarWrap .navBar{
+    background: rgb(46, 41, 126);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+.navBarWrap .navBar .navBarImg{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.navBarWrap .navBar .navBarImg img{
+    object-fit: contain;
+    width: 140px;
+    height: 140px;
+    border-radius: 60%;
+    margin: 0 auto;
+}
+
+.navBarWrap .navBar .navBarImg h3{
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+.navBarWrap .navBar .navBarImg p{
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}
+
+
+
+
+
+/*Sidebar Link Format*/
+.navBarWrap .navBar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(221, 0, 210);
+    font-size: 16px;
+    position: relative;
+}
+
+.navBarWrap .navBar ul li a .navLinkIcon{
+    color: #0092a5;
+    width: 30px;
+    display: inline-block;
+}
+.navBarWrap .navBar ul li a:hover,
+.navBarWrap .navBar ul li a.active{
+    color: #82d7ff;
+
+    background:rgb(255, 255, 255);
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.navBarWrap .navBar ul li a:hover .navLinkIcon,
+.navBarWrap .navBar ul li a.navBarLink .navLinkIcon{
+    color: #b10c95;
+}
+
+.navBarWrap .navBar ul li a:hover:before,
+.navBarWrap .navBar ul li a.navBarLink:before{
+    display: block;
+}
+
+
+/* Top NavBar */
+.navBarWrap .navBarDots{
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+.navBarWrap .navBarDots .topNavBar{
+    background: rgb(134, 200, 255);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+
+}
+
+.navBarWrap .navBarDots .topNavBar .navBurger a{
+    font-size: 28px;
+    color: #f4fbff;
+}
+
+.navBarWrap .navBarDots .topNavBar .navBurger a:hover{
+    color: #a2ecff;
+}
+
+body.navBarLink .navBarWrap .navBar{
+    left: -225px;
+}
+
+body.navBarLink .navBarWrap .navBarDots{
+    margin-left: 0;
+    width: 100%;
+}
+
