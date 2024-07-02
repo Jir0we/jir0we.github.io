@@ -46,7 +46,23 @@
         opacity: 1;
     }
 }
+@-webkit-keyframes fadeIn { /* Chrome */
+    to {
+        opacity: 1;
+    }
+}
 
+@-moz-keyframes fadeIn { /* not chrome */
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn { /* chrome */
+    to {
+        opacity: 1;
+    }
+}
 /* About Us Page */
 .aboutUsHead {
     color:rgb(160, 162, 255);
